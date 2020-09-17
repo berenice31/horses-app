@@ -2,11 +2,11 @@ import { Service as MongooseService } from 'feathers-mongoose'
 import { NotFound } from '@feathersjs/errors'
 import Debug from '@debug'
 
-const debug = Debug('flags')
+const debug = Debug('horses')
 
 export default class Service extends MongooseService {
   setup (app) {
-    debug.init('Setup flags')
+    debug.init('Setup horses')
   }
 
   find (params) {

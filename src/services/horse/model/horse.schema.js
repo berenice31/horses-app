@@ -1,5 +1,5 @@
 import { Schema } from 'mongoose'
-import Constants from '../constants/flag.constants'
+import Constants from '../constants/horse.constants'
 
 export default {
   country: { 
@@ -9,8 +9,13 @@ export default {
     unique: true,
   },
 
-  continent: { 
+  race: { 
     type: String, 
     required: true,
   },
+
+  vote: {
+    type: Number,
+    default: 0
+  }
 }

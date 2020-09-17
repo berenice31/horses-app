@@ -4,7 +4,7 @@
   "description": "Template",
   "scripts": {
     "start": "NODE_ENV=localhost ./node_modules/.bin/nodemon --watch src --watch .env --exec babel-node -- -r ./ci/scripts/load-dev-env.js src/server/index.js",
-    "build": "./node_modules/.bin/webpack --config ci/config/webpack/config.js",
+    "build": "webpack --config ci/config/webpack/config.js",
     "serve": "node server.js",
     "lint": "eslint src/. --config .eslintrc.json",
     "lint:fix": "eslint src/. --config .eslintrc.json --fix",
@@ -91,5 +91,17 @@
     "@utils": "src/utils",
     "@middleware": "src/middleware",
     "@database": "src/database"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/freebe.learning/base-feathers-server.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/freebe.learning/base-feathers-server/issues"
+  },
+  "homepage": "https://gitlab.com/freebe.learning/base-feathers-server#readme"
 }

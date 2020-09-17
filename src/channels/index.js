@@ -1,4 +1,4 @@
-import Debug from '@debug'
+import Debug from 'src/services/horse/service/@debug'
 
 const debug = Debug('channels')
 
