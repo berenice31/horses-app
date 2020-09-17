@@ -2,12 +2,10 @@ import mongoose from 'mongoose'
 import init from './init'
 import seed from './seed'
 
-import HealthService from './health' 
-import FlagService from './horse' 
+import CountryService from './countries' 
+import HorseService from './horse' 
 
 import Debug from '@debug'
-
-import HorseService from './horse' 
 
 const debug   = Debug('@api:error/mongoose')
 const initlog = Debug('@api:init')
@@ -19,7 +17,7 @@ export default function () {
     mongoose.set('debug', true)
   }
 
-  app.configure(HealthService)
+  app.configure(CountryService)
   app.configure(HorseService)
 
   init(app)
