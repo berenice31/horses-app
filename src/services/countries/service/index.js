@@ -10,12 +10,12 @@ export default class Service {
   }
 
   find (params = {}) {
-    request
+    return request
     .find(`https://restcountries.eu/rest/v2/name/all`).then(res => res.body)
   }
 
   get (id) {
-    request
+    return request
       .get(`https://restcountries.eu/rest/v2/name/${id}`).then(res => res.body)
   }
 }
