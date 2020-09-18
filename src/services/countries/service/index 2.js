@@ -11,7 +11,7 @@ export default class Service {
 
   find (params = {}) {
     return request
-      .get(`https://restcountries.eu/rest/v2/name/all`).then(res => res.body)
+    .find(`https://restcountries.eu/rest/v2/name/all`).then(res => res.body)
   }
 
   get (id) {

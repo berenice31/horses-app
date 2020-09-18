@@ -18,8 +18,6 @@ export default class Service extends MongooseService {
       params.query.$sort = { country: 1 }
     }
 
-    console.log('Service call')
-
     return super._find(params)
   }
 }

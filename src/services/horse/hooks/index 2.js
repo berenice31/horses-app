@@ -1,12 +1,9 @@
 import { iff, iffElse, isNot, isProvider, disallow } from 'feathers-hooks-common'
-import * as hooks from './horse.hooks'
+
 
 export const before = {
   all: [],
-  find: [
-    hooks.log(1),
-    hooks.log(2),
-  ],
+  find: [],
   get: [],
   create: [],
   update: [],
@@ -16,9 +13,7 @@ export const before = {
 
 export const after = {
   all: [],
-  find: [
-
-  ],
+  find: [],
   get: [],
   create: [],
   update: [],
